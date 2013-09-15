@@ -31,7 +31,7 @@ group :development do
   gem 'log_buddy'
 
   gem 'foreman'
-  gem 'pry'
+  # gem 'pry'
 end
 
 group :test do

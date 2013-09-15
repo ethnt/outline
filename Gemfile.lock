@@ -61,7 +61,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    method_source (0.8.2)
     mime-types (1.25)
     mongoid (3.1.4)
       activemodel (~> 3.2)
@@ -107,11 +106,6 @@ GEM
       slop (~> 3.4, >= 3.4.5)
     polyglot (0.3.3)
     powerpack (0.0.8)
-    pry (0.8.3)
-      coderay (>= 0.9.7)
-      method_source (>= 0.4.0)
-      ruby_parser (>= 2.0.5)
-      slop (>= 1.5.3)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -136,10 +130,7 @@ GEM
       powerpack (~> 0.0.6)
       rainbow (>= 1.1.4)
     ruby-progressbar (1.2.0)
-    ruby_parser (3.2.2)
-      sexp_processor (~> 4.1)
     sass (3.2.10)
-    sexp_processor (4.3.0)
     shoulda-matchers (2.3.0)
       activesupport (>= 3.0.0)
     sinatra (1.4.3)
@@ -187,7 +178,6 @@ DEPENDENCIES
   mutations
   padrino (= 0.11.3)
   padrino-sprockets!
-  pry
   puma
   rack-test
   rake

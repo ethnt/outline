@@ -1,0 +1,56 @@
+!!!5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+
+    %title Draft
+
+    %link{:href => "/humans.txt", :rel => "author", :type => "text/plain"}/
+    %link{:href => "/assets/index.css", :rel => "stylesheet"}/
+
+    %script{:src => "//use.typekit.net/njw2qqg.js"}
+    :coffeescript
+      try
+        Typekit.load()
+      catch error
+        console.log error
+
+  %body
+    #contain
+
+      %header.index
+        .inner
+          %h1= link_to "Draft", url(:index)
+
+      %main{:role => "main"}
+        .section
+          %h2 Taking notes shouldn't be hard.
+        .section
+          %figure
+            %i.ss-icon cellphone
+            %figcaption
+              %h3 Take notes anywhere.
+          %figure
+            %i.ss-icon tag
+            %figcaption
+              %h3 Tag your notes for easier organization
+          %figure
+            %i.ss-icon search
+            %figcaption
+              %h3 Search through your notes
+        .section
+          %nav
+            %ul
+              %li= link_to "Login", url(:sessions, :new), :class => "btn"
+              %li= link_to "Join", url(:users, :new), :class => "btn blue"
+
+      %footer
+
+    %script{:src => "/assets/application.js"}
+    :javascript
+      window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
