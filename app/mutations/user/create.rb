@@ -2,7 +2,7 @@ class UserCreate < Mutations::Command
   required do
     hash :user do
       string :email
-      string :password
+      string :password, nils: true
     end
   end
 

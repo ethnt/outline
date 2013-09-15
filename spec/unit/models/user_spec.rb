@@ -6,6 +6,9 @@ describe User do
 
   it { should validate_presence_of :email }
 
+  it { should allow_value('a@b.com').for(:email) }
+  it { should_not allow_value('a').for(:email) }
+
   it { user.should be_valid }
 
   describe '.authenticate' do

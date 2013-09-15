@@ -1,4 +1,4 @@
-module Draft
+module Outline
   class Web < Padrino::Application
     register Padrino::Rendering
     register Padrino::Mailer

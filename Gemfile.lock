@@ -25,7 +25,7 @@ GEM
     builder (3.0.4)
     canable (0.3.0)
     chunky_png (1.2.8)
-    coderay (1.1.0)
+    coderay (1.0.9)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -61,6 +61,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.2)
     mime-types (1.25)
     mongoid (3.1.4)
       activemodel (~> 3.2)
@@ -106,6 +107,10 @@ GEM
       slop (~> 3.4, >= 3.4.5)
     polyglot (0.3.3)
     powerpack (0.0.8)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -178,6 +183,7 @@ DEPENDENCIES
   mutations
   padrino (= 0.11.3)
   padrino-sprockets!
+  pry (~> 0.9.12.2)
   puma
   rack-test
   rake
