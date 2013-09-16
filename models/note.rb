@@ -11,6 +11,8 @@ class Note
 
   belongs_to :user
 
+  has_and_belongs_to_many :tags
+
   def viewable_by?(u)
     self.user == u
   end
