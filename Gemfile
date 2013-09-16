@@ -42,6 +42,7 @@ group :test do
   gem 'factory_girl'
   gem 'database_cleaner'
 
+  gem 'guard-rspec'
   gem 'fuubar'
   gem 'rubocop'
 end
